@@ -23,7 +23,7 @@ public class Main {
                 product = parts[0].substring(0, 1).toUpperCase() + parts[0].substring(1).toLowerCase();
                 count = Integer.parseInt(parts[1]);
             } catch (Exception e) {
-                throw new IllegalArgumentException("Параметры нужно задавать в формате ТОВАР КОЛИЧЕСТВО!");
+                throw new IllegalArgumentException("Текст нужно вводить в формате ТОВАР КОЛИЧЕСТВО!");
             }
             if (isPresent(products, product)) {
                 basket.add(product, count);
